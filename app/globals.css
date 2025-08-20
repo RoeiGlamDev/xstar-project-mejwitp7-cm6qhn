@@ -1,0 +1,76 @@
+import { createGlobalStyle } from 'styled-components';
+
+const GlobalStyle = createGlobalStyle`
+  body {
+    margin: 0;
+    font-family: 'Arial', sans-serif; // Use a clean and modern font
+    background-color: white; // Elegant white background
+    color: #FF6F20; // High-end orange color for text
+    line-height: 1.6;
+    transition: background-color 0.3s ease; // Smooth background transition
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    color: #FF6F20; // Orange for headings
+    text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.1); // Subtle shadow for depth
+  }
+
+  a {
+    color: #FF6F20; // Orange for links
+    text-decoration: none;
+    transition: color 0.3s ease; // Smooth color transition
+  }
+
+  a:hover {
+    color: #FF4D00; // Darker orange on hover
+  }
+
+  button {
+    background-color: #FF6F20; // Button background
+    color: white; // Button text color
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px; // Rounded corners for buttons
+    cursor: pointer;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); // Luxurious shadow effect
+    transition: transform 0.2s ease; // Smooth button press effect
+  }
+
+  button:hover {
+    transform: scale(1.05); // Slightly enlarge button on hover
+  }
+
+  .container {
+    max-width: 1200px; // Max width for content
+    margin: 0 auto; // Center the container
+    padding: 20px; // Padding for content spacing
+  }
+
+  .card {
+    background: white; // Card background
+    border-radius: 10px; // Rounded corners for cards
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1); // Luxurious shadow for cards
+    overflow: hidden; // Prevent overflow
+    transition: transform 0.3s ease; // Smooth card hover effect
+  }
+
+  .card:hover {
+    transform: translateY(-5px); // Lift card on hover
+  }
+
+  // 3D effect on elements
+  .three-d {
+    perspective: 1000px; // Perspective for 3D effect
+  }
+
+  .three-d-inner {
+    transform-style: preserve-3d; // Preserve 3D transformations
+    transition: transform 0.5s; // Smooth transition for 3D effect
+  }
+
+  .three-d:hover .three-d-inner {
+    transform: rotateY(10deg) rotateX(10deg); // Rotate on hover
+  }
+`;
+
+export default GlobalStyle;
